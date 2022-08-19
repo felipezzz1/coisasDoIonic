@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label>
+    Cadastro de contatos
+  </ion-label>
+  <!-- Input with placeholder for name -->
+  <ion-input placeholder="Nome" [(ngModel)]="nome"></ion-input>
+  <!-- Input with placeholder for number -->
+  <ion-input placeholder="Telefone" [(ngModel)]="telefone" type="number"></ion-input>
+  <ion-button expand="block" (click)="cadastrar()">Cadastrar</ion-button>
+</ion-content>
